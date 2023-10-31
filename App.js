@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import message from './funcao_mensagem/message';
 
 function App() {
+  const word = 'Olá mundo! Meu nome é Adler e estou utilizando react.js!';
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Adler
+          {message(word)}
         </p>
         <a
           className="App-link"
